@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="intro">
+  <h2>Hi, I'm Sreehari</h2>
+  <p>
+    I'm currently studying Electrical Engineering, and I’ve always been drawn to the intersection of hardware and software—especially when it comes to embedded systems, robotics, and smart devices. I love the challenge of making things work in the real world, whether that’s getting a sensor to behave or building an entire system from scratch.
+  </p>
+  <p>
+    Over the past few years, I’ve had the chance to work on some really exciting projects—from building a smart cradle for infants to programming autonomous robots for planetary exploration. I’ve also enjoyed mentoring fellow students in hands-on courses like Computer Architecture and Engineering Challenge for Venus, where I help troubleshoot hardware and guide students through their designs.
+  </p>
+  <p>
+    I’m passionate about turning ideas into prototypes, solving real problems with creative solutions, and constantly learning new things along the way.
+  </p>
+</section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Rock Your Baby</h3>
+        <p>
+          A smart cradle system designed to monitor and soothe infants. I was responsible for integrating sensors (like accelerometers and IR), controlling a stepper motor for rocking, and designing software to automatically respond to a baby’s movements or crying. The system used a PYNQ board and MQTT communication to coordinate behavior and log data.
+        </p>
+      </div>
+      
+      <div class="project">
+        <h3>Engineering Challenge for Venus</h3>
+        <p>
+          A robotics challenge simulating harsh planetary exploration. I worked on designing and maintaining a robot equipped with various sensors including ultrasound, photodiodes, and IR. Tasks involved programming autonomous behavior, debugging sensor circuits, and improving the wireless communication system. I later became a tutor for this course, helping students troubleshoot and enhance their robots.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Wien Bridge Oscillator</h3>
+        <p>
+          Designed and built a 10 kHz sine wave oscillator using op-amps and a feedback network. This analog electronics project focused on stability, frequency accuracy, and amplitude control, giving me deeper insights into feedback systems and practical circuit behavior.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Digit Classifier with Neural Networks</h3>
+        <p>
+          Implemented a digit recognition system using Python and Keras, trained on the MNIST dataset. Achieved over 95% accuracy by tuning network architecture and hyperparameters. This project deepened my understanding of machine learning fundamentals and neural network optimization.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sreehari. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
